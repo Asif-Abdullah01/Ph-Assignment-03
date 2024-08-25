@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#212121',
+                        secondary: '#ABEF5F',
+                        body: '#1E1E1E',
+                    },
+                    fontFamily: {
+                        manrope: 'Manrope',
+                    },
+                    backgroundImage: {
+                        leaf: "url('./assets/leaf01.png')",
+                        call_to_action: "url('./assets/call.jpg')",
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-manrope">
+  <div class="bg-gradient-to-b from-slate-100 to-white">
+    <header class="w-10/12 mx-auto">
+      <nav>
+          <div class="navbar py-10">
+              <div class="navbar-start">
+                <i class="fa-solid fa-arrow-up bg-secondary px-3 py-2.5 rounded-full rotate-45"></i>
+                <a class="text-3xl pl-1.5 font-extrabold">Rinterio</a>
+              </div>
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 gap-5">
+                  <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Home</a></li>
+                  <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Services</a></li>
+                  <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Portfolio</a></li>
+                  <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Blogs</a></li>
+                  <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="navbar-end gap-3">
+                  <div class="hidden md:block">
+                    <i class="fa-solid fa-magnifying-glass bg-white px-3 py-3 rounded-full border-2"></i>
+                    <i class="fa-solid fa-cart-shopping bg-white px-3 py-3 rounded-full border-2"></i>
+                    <button class="px-4 py-1 bg-secondary rounded-full font-extrabold text-black">
+                        <a>Book Consult</a>
+                        <i class="fa-solid fa-arrow-up text-white bg-black px-3 py-2.5 rounded-full rotate-45"></i>
+                    </button>
+                  </div>
+
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class=" bg-white px-3 py-3 rounded-full border-2 lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                      <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Home</a></li>
+                      <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Services</a></li>
+                      <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Portfolio</a></li>
+                      <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Blogs</a></li>
+                      <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Contact Us</a></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+      </nav>
+
+
+      <div class="banner md:w-10/12 mx-auto pb-20">
+          <img class="w-10/12 md:w-6/12 mx-auto" src="assets/banner.png" alt="">
+          <div class="hero">
+            <div class="hero-content px-0 text-center">
+              <div class="">
+                <h1 class="text-4xl lg:text-6xl text-primary font-black">A barn house of this design has a striking appearance</h1>
+                <p class="py-6 text-[#494949] font-semibold">
+                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+                <button class="px-4 py-2 bg-[#acef5fb1] rounded-full font-extrabold text-primary">
+                  <a class="pr-1">View Details</a>
+                  <i class="fa-solid fa-arrow-up text-primary bg-[#ABEF5F] px-3 py-2.5 rounded-full rotate-45"></i>
+              </button>
+              </div>
+            </div>
+          </div>
+      </div>
+  </header>
+  </div>
+
+</body>
+
+</html>
