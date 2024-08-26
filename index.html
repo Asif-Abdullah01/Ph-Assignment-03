@@ -2,123 +2,244 @@
 <html data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rinterio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rinterio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#212121',
-                        secondary: '#ABEF5F',
-                        body: '#1E1E1E',
-                    },
-                    fontFamily: {
-                        manrope: 'Manrope',
-                    },
-                    backgroundImage: {
-                        leaf: "url('./assets/leaf01.png')",
-                        call_to_action: "url('./assets/call.jpg')",
-                    },
-                },
-            },
-        }
-    </script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#212121',
+            secondary: '#ABEF5F',
+            body: '#F4F4F4',
+          },
+          fontFamily: {
+            manrope: 'Manrope',
+          },
+          backgroundImage: {
+            leaf: "url('./assets/leaf01.png')",
+            call_to_action: "url('./assets/call.jpg')",
+          },
+        },
+      },
+    }
+  </script>
 </head>
 
 <body class="font-manrope">
   <div class="bg-gradient-to-b from-slate-100 to-white">
     <header class="w-10/12 mx-auto">
       <nav>
-          <div class="navbar py-10">
-              <div class="navbar-start">
-                <i class="fa-solid fa-arrow-up bg-secondary px-3 py-2.5 rounded-full rotate-45"></i>
-                <a class="text-3xl pl-1.5 font-extrabold">Rinterio</a>
-              </div>
-              <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1 gap-5">
-                  <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Home</a></li>
-                  <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Services</a></li>
-                  <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Portfolio</a></li>
-                  <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Blogs</a></li>
-                  <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="navbar-end gap-3">
-                  <div class="hidden md:block">
-                    <i class="fa-solid fa-magnifying-glass bg-white px-3 py-3 rounded-full border-2"></i>
-                    <i class="fa-solid fa-cart-shopping bg-white px-3 py-3 rounded-full border-2"></i>
-                    <button class="px-4 py-1 bg-secondary rounded-full font-extrabold text-black">
-                        <a>Book Consult</a>
-                        <i class="fa-solid fa-arrow-up text-white bg-black px-3 py-2.5 rounded-full rotate-45"></i>
-                    </button>
-                  </div>
-
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class=" bg-white px-3 py-3 rounded-full border-2 lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
-                      <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Home</a></li>
-                      <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Services</a></li>
-                      <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Portfolio</a></li>
-                      <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Blogs</a></li>
-                      <li><a class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Contact Us</a></li>
-                    </ul>
-                  </div>
-              </div>
+        <div class="navbar py-10">
+          <div class="navbar-start">
+            <i class="fa-solid fa-arrow-up bg-secondary px-3 py-2.5 rounded-full rotate-45"></i>
+            <a class="text-3xl pl-1.5 font-extrabold">Rinterio</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 gap-5">
+              <li><a
+                  class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Home</a>
+              </li>
+              <li><a
+                  class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Services</a>
+              </li>
+              <li><a
+                  class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Portfolio</a>
+              </li>
+              <li><a
+                  class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Blogs</a>
+              </li>
+              <li><a
+                  class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Contact
+                  Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-3">
+            <div class="hidden md:block">
+              <i class="fa-solid fa-magnifying-glass bg-white px-3 py-3 rounded-full border-2"></i>
+              <i class="fa-solid fa-cart-shopping bg-white px-3 py-3 rounded-full border-2"></i>
+              <button class="px-4 py-1 bg-secondary rounded-full font-extrabold text-black">
+                <a>Book Consult</a>
+                <i class="fa-solid fa-arrow-up text-white bg-black px-3 py-2.5 rounded-full rotate-45"></i>
+              </button>
             </div>
+
+            <div class="dropdown">
+              <div tabindex="0" role="button" class=" bg-white px-3 py-3 rounded-full border-2 lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                <li><a
+                    class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Home</a>
+                </li>
+                <li><a
+                    class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Services</a>
+                </li>
+                <li><a
+                    class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Portfolio</a>
+                </li>
+                <li><a
+                    class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Blogs</a>
+                </li>
+                <li><a
+                    class="text-[#737373] text-base font-medium hover:text-slate-700 hover:bg-transparent hover:font-extrabold transition-colors ease-in-out duration-300">Contact
+                    Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
 
 
       <div class="banner md:w-10/12 mx-auto pb-20">
-          <img class="w-10/12 md:w-6/12 mx-auto" src="assets/banner.png" alt="">
-          <div class="hero">
-            <div class="hero-content px-0 text-center">
-              <div class="">
-                <h1 class="text-4xl lg:text-6xl text-primary font-black">A barn house of this design has a striking appearance</h1>
-                <p class="py-6 text-[#494949] font-semibold">
-                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
-                </p>
-                <button class="px-4 py-2 bg-[#acef5fb1] rounded-full font-extrabold text-primary">
-                  <a class="pr-1">View Details</a>
-                  <i class="fa-solid fa-arrow-up text-primary bg-[#ABEF5F] px-3 py-2.5 rounded-full rotate-45"></i>
+        <img class="w-10/12 md:w-6/12 mx-auto" src="assets/banner.png" alt="">
+        <div class="hero">
+          <div class="hero-content px-0 text-center">
+            <div class="">
+              <h1 class="text-4xl lg:text-6xl text-primary font-black">A barn house of this design has a striking
+                appearance</h1>
+              <p class="py-6 text-[#494949] font-semibold">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+                wood, sleek metal accents, and large windows that flood the space with natural light.
+              </p>
+              <button class="py-2 w-full md:w-1/5 bg-[#acef5fb1] rounded-full font-extrabold text-primary">
+                <a class="pr-1">View Details</a>
+                <i class="fa-solid fa-arrow-up text-primary bg-[#ABEF5F] px-3 py-2.5 rounded-full rotate-45"></i>
               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <div class="bg-body py-20 relative">
+      <div class="absolute left-20 top-8">
+        <img src="assets/Vector.png" alt="">
+      </div>
+      <section class="we-design w-10/12 mx-auto mt-5">
+        <div class="parent flex justify-between items-center">
+          <div class="left w-1/2">
+            <div class="left-content space-y-5 mb-5">
+              <button class="bg-white py-1.5 px-3.5 rounded-full flex items-center gap-2">
+                <i class="fa-solid fa-arrow-up text-primary rotate-90"></i>
+                <a class="text-base font-bold">About Us</a>
+              </button>
+
+              <h2 class="text-primary text-4xl font-extrabold leading-tight">We design thoughtful,<br>liveable spaces
+              </h2>
+              <p class="tect-xl font-medium">The barn house captivates with its blend of rustic charm and <br>
+                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+
+            <div class="left-card-1 bg-[#FFFFFF] rounded-2xl flex items-center px-8 py-8 gap-4">
+              <div class="image">
+                <img src="assets/commercial.png" alt="">
+              </div>
+              <div class="card-content">
+                <h4 class="font-extrabold text-xl">Commercial</h4>
+                <p class="text-[#737373] text-xl">The barn house captivates with its blend <br> of rustic charm and
+                  modern.</p>
+              </div>
+            </div>
+
+            <div class="left-card-2 bg-[#FFFFFF] rounded-2xl flex items-center px-8 py-8 gap-4 mt-7">
+              <div class="image">
+                <img src="assets/residential.png" alt="">
+              </div>
+              <div class="card-content">
+                <h4 class="font-extrabold text-xl">Residential</h4>
+                <p class="text-[#737373] text-xl">The barn house captivates with its blend <br> of rustic charm and
+                  modern.</p>
               </div>
             </div>
           </div>
+
+
+          <div class="right">
+            <img class="w-full" src="assets/Rectangle.png" alt="">
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="work-section bg-body">
+      <div class="our-works w-10/12 mx-auto">
+        <div class="work-content flex flex-col items-center justify-center space-y-5">
+          <button class="bg-white py-1.5 px-3.5 rounded-full flex items-center gap-2">
+            <i class="fa-solid fa-arrow-up text-primary rotate-90"></i>
+            <a class="text-base font-bold">How we works</a>
+          </button>
+          <h2 class="text-primary text-4xl font-extrabold leading-tight">Our Works Process</h2>
+          <p class="text-center">The barn house captivates with its blend of rustic charm and modern
+            sophistication,<br>featuring weathered wood, sleek metal accents.</p>
+        </div>
+
+        <div class="card-parent grid grid-cols-4 gap-6 mt-10 pb-20">
+          <div class="card bg-[#E7C1D3] p-6 space-y-4">
+            <img class="w-1/6" src="assets/concept.png" alt="">
+            <h4 class="font-extrabold text-xl">Concept</h4>
+            <p class="text-[#494949] text-base">The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+          <div class="card bg-[#EFDA6E] p-6 space-y-4">
+            <img class="w-1/6" src="assets/flow-chart.png" alt="">
+            <h4 class="font-extrabold text-xl">Concept</h4>
+            <p class="text-[#494949] text-base">The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+          <div class="card bg-[#A4DAC3] p-6 space-y-4">
+            <img class="w-1/6" src="assets/vision.png" alt="">
+            <h4 class="font-extrabold text-xl">Concept</h4>
+            <p class="text-[#494949] text-base">The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+          <div class="card bg-[#77AAEA] p-6 space-y-4">
+            <img class="w-1/6" src="assets/budget-planning.png" alt="">
+            <h4 class="font-extrabold text-xl">Concept</h4>
+            <p class="text-[#494949] text-base">The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+        </div>
+
       </div>
-  </header>
-  </div>
+    </section>
+
+
+    <section class="portfolio pt-20 pb-8">
+      <div class="portfolio-content w-10/12 mx-auto">
+        <div class="work-content flex flex-col items-center justify-center space-y-5">
+          <button class="bg-[#acef5f3c] py-1.5 px-3.5 rounded-full flex items-center gap-2">
+            <i class="fa-solid fa-arrow-up text-primary rotate-90"></i>
+            <a class="text-base font-bold">About Us</a>
+          </button>
+          <h2 class="text-primary text-4xl font-extrabold leading-tight">Our Works Process</h2>
+          <p class="text-center">The barn house captivates with its blend of rustic charm and modern
+            sophistication,<br>featuring weathered wood, sleek metal accents.</p>
+        </div>
+      </div>
+
+
+    </section>
+
+  </main>
 
 </body>
 
